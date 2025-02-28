@@ -9,7 +9,7 @@ updation('btn-5', 'activity-title-5');
 updation('btn-6', 'activity-title-6');
 
 getID('Go-to-blogs').addEventListener('click', function(){
-    window.location.href = './main.html';
+    window.location.href = './blog.html';
 })
 
 
