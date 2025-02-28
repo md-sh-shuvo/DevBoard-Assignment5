@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A5-DEV-BOARD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F4F7FF] min-h-screen pt-6">
+    <header>
+      <nav class="bg-white w-[95%] max-w-[1536px] mx-auto p-6  flex items-center justify-between rounded-2xl">
+        <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="">
+            <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div class="flex items-center gap-9">
+            <div class="check-box h-16 flex items-center gap-4 bg-[#F4F7FF] rounded-[32px] px-4">
+                <img class="" src="assets/checkbox.png" alt="">
+                <h1 id="total-tasks" class="font-bold text-[32px]">23</h1>
+            </div>
+            <div class="theme-btn w-16 h-16 flex justify-center items-center bg-[rgb(244,247,255)] rounded-full"><button id="btn-theme"><img src="assets/theme-btn.png" alt="" class="w-[100%] mx-auto"></button></div>
+        </div>
+      </nav>
+      <section class=" w-[95%] max-w-[1536px] mx-auto  flex gap-6">
+        <div class="bg-white p-6 mt-5 rounded-2xl ">
+            <div class="flex gap-6">
+                <div class="bg-[#F4F7FF] p-8 flex items-center gap-5 rounded-[12px]">
+                    <div class="theme-btn w-16 h-16 flex justify-center items-center bg-white rounded-full"><button><img src="assets/checkbox.png" alt="" class=""></button>
+                    </div>
+                    <div>
+                        <p class="font-medium text-sm">Task Assigned</p>
+                        <h1 class="font-bold text-3xl">0<span id="remaining-tasks">6</span></h1>
+                    </div>
+                </div>
+                <div id="Go-to-blogs" class=" bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-8 flex flex-grow items-center gap-5 rounded-[12px]">
+                    <img src="assets/board.png" alt="" class="">
+                    
+                    <div>
+                        <h1 class="font-medium text-2xl text-white">Discover Something<br>New Today!</h1>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] p-8 flex items-center gap-5 rounded-[12px]">
+                    <div class="theme-btn w-16 h-16 flex justify-center items-center bg-white rounded-full"><button><img src="assets/calender.png" alt="" class=""></button>
+                    </div>
+                    <div>
+                        <p class="text-2xl">Wed ,</p>
+                        <h1 id="date" class="font-bold text-2xl">Jul 28 2025 </h1>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-b-2  border-dashed border-[#3752FD] my-8 mx-[-24px]"></div>
+            <div class="cards-container grid grid-cols-3 gap-9"> 
+                <div class="box bg-[#F4F7FF] rounded-2xl p-6">
+                    <h2 class="bg-white px-4 py-2 max-w-fit rounded-lg text-lg">ShopEase</h2>
+                    <h1 id="activity-title-1" class="font-medium text-2xl my-4">Fix Mobile Button Issue </h1>
+                    <p class="text-lg bg-white p-4 rounded-lg text-gray-600">Debug using Chrome DevTools, check for overlappi</p>
+                    <div class="flex items-center justify-between  border-t-[1px] border-dashed  border-[#3752FD] mt-3 pt-3">
+                        <div>
+                            <p class="text-sm text-gray-600 mt-3">Deadline</p>
+                            <h2 class="font-medium text-lg">21 March 2025</h2>
+                        </div>
+                        <div class=""><button id="btn-1" class="btn flex justify-center items-center bg-[#3752FD] text-white font-medium text-lg px-5 py3">Completed</button></div>
+                    </div>
+
+                </div>
+                <div class="box bg-[#F4F7FF] rounded-2xl p-6">
+                    <h2 class="bg-white px-4 py-2 max-w-fit rounded-lg text-lg">CloudSync</h2>
+                    <h1 id="activity-title-2" class="font-medium text-2xl my-4">Add Dark Mode</h1>
+                    <p class="text-lg bg-white p-4 rounded-lg text-gray-600">Debug using Chrome DevTools, check for overlappi</p>
+                    <div class="flex items-center justify-between  border-t-[1px] border-dashed  border-[#3752FD] mt-3 pt-3">
+                        <div>
+                            <p class="text-sm text-gray-600 mt-3">Deadline</p>
+                            <h2 class="font-medium text-lg">21 March 2025</h2>
+                        </div>
+                        <div class=""><button id="btn-2" class="btn flex justify-center items-center bg-[#3752FD] text-white font-medium text-lg px-5 py3">Completed</button></div>
+                    </div>
+
+                </div>
+                <div class="box bg-[#F4F7FF] rounded-2xl p-6">
+                    <h2 class="bg-white px-4 py-2 max-w-fit rounded-lg text-lg">SwiftPay</h2>
+                    <h1 id="activity-title-3" class="font-medium text-2xl my-4">Optimize  Home page </h1>
+                    <p class="text-lg bg-white p-4 rounded-lg text-gray-600">Debug using Chrome DevTools, check for overlappi</p>
+                    <div class="flex items-center justify-between  border-t-[1px] border-dashed  border-[#3752FD] mt-3 pt-3">
+                        <div>
+                            <p class="text-sm text-gray-600 mt-3">Deadline</p>
+                            <h2 class="font-medium text-lg">21 March 2025</h2>
+                        </div>
+                        <div class=""><button id="btn-3" class="btn flex justify-center items-center bg-[#3752FD] text-white font-medium text-lg px-5 py3">Completed</button></div>
+                    </div>
+
+                </div>
+                <div class="box bg-[#F4F7FF] rounded-2xl p-6">
+                    <h2 class="bg-white px-4 py-2 max-w-fit rounded-lg text-lg">Meta</h2>
+                    <h1 id="activity-title-4" class="font-medium text-2xl my-4">Add new emoji 🤲</h1>
+                    <p class="text-lg bg-white p-4 rounded-lg text-gray-600">Debug using Chrome DevTools, check for overlappi</p>
+                    <div class="flex items-center justify-between  border-t-[1px] border-dashed  border-[#3752FD] mt-3 pt-3">
+                        <div>
+                            <p class="text-sm text-gray-600 mt-3">Deadline</p>
+                            <h2 class="font-medium text-lg">21 March 2025</h2>
+                        </div>
+                        <div class=""><button id="btn-4" class="btn flex justify-center items-center bg-[#3752FD] text-white font-medium text-lg px-5 py3">Completed</button></div>
+                    </div>
+
+                </div>
+                <div class="box bg-[#F4F7FF] rounded-2xl p-6">
+                    <h2 class="bg-white px-4 py-2 max-w-fit rounded-lg text-lg">Google LLC</h2>
+                    <h1 id="activity-title-5" class="font-medium text-2xl my-4">Integrate OpenAI API </h1>
+                    <p class="text-lg bg-white p-4 rounded-lg text-gray-600">Debug using Chrome DevTools, check for overlappi</p>
+                    <div class="flex items-center justify-between  border-t-[1px] border-dashed  border-[#3752FD] mt-3 pt-3">
+                        <div>
+                            <p class="text-sm text-gray-600 mt-3">Deadline</p>
+                            <h2 class="font-medium text-lg">21 March 2025</h2>
+                        </div>
+                        <div class=""><button id="btn-5" class="btn flex justify-center items-center bg-[#3752FD] text-white font-medium text-lg px-5 py3">Completed</button></div>
+                    </div>
+
+                </div>
+                <div class="box bg-[#F4F7FF] rounded-2xl p-6">
+                    <h2 class="bg-white px-4 py-2 max-w-fit rounded-lg text-lg">Glassdoar</h2>
+                    <h1 id="activity-title-6" class="font-medium text-2xl my-4">Improve Job searching </h1>
+                    <p class="text-lg bg-white p-4 rounded-lg text-gray-600">Debug using Chrome DevTools, check for overlappi</p>
+                    <div class="flex items-center justify-between  border-t-[1px] border-dashed  border-[#3752FD] mt-3 pt-3">
+                        <div>
+                            <p class="text-sm text-gray-600 mt-3">Deadline</p>
+                            <h2 class="font-medium text-lg">21 March 2025</h2>
+                        </div>
+                        <div class=""><button id="btn-6" class="btn flex justify-center items-center bg-[#3752FD] text-white font-medium text-lg px-5 py3">Completed</button></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="activity-container" class="bg-white p-6 mt-5 rounded-2xl w-[30%]">
+            <div class="flex justify-center items-center gap-4">
+                <img class="mt-[3px]" src="assets/activity.png" alt="">
+                <h1 class="font-medium text-2xl">Activity Log</h1>
+            </div>
+            <div class="w-fit mx-auto mt-4"><button id="clear-history" class="btn bg-[#3752FD] text-white font-medium text-lg px-5 py3 border-2">Clear History</button></div>
+            <div class="border-b-2  border-dashed border-[#3752FD] my-8 mx-[-24px]"></div>
+            <p id="activity" class=""></p>
+        </div>
+      </section>
+    </header>
+
+    <script src="utilities/utilities.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/activityLog.js"></script>
+  </body>
+</html>
