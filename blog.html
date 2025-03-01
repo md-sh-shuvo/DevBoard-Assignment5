@@ -22,32 +22,40 @@
             <button id="btn-back-to-desk" class=" btn  flex justify-center items-center bg-[rgb(51,96,219)] text-white">Back to Desk</button>
             
           </nav>
-          <section class=" w-[95%] max-w-[1536px] mx-auto">
+          <section class=" w-[95%] max-w-[1536px] mx-auto pb-5">
             <h1 id="blog-title" class="text-center mt-3 font-bold text-2xl">Blogs</h1>
             <div class="blogs bg-white p-6 mt-5 rounded-[5px] ">
               <h1 class="font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</h1>
               <div class="border-b-2  border-dashed border-[#3752FD] my-8 mx-[-24px]"></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quia assumenda labore vel inventore, sunt modi excepturi facilis soluta hic aperiam velit in nam commodi non id doloribus optio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fuga accusamus adipisci non soluta. Magni laboriosam non, adipisci deserunt iste tenetur veniam quos beatae numquam maiores laborum? Eveniet, reiciendis velit?</p>
+              <p>There are many ways to select an element. They are :
+                By id : getElementById('id-name');
+                By class : getElementsByClassName('class-name'); 
+                By tag name : getElementByTagName('tag name'); 
+                CSS query selector :
+                            querySelector('css .class or #id)
+                            querySelectorAll()</p>
             </div>
             <div class="blogs bg-white p-6 mt-5 rounded-[5px] ">
               <h1 class="font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
               <div class="border-b-2  border-dashed border-[#3752FD] my-8 mx-[-24px]"></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quia assumenda labore vel inventore, sunt modi excepturi facilis soluta hic aperiam velit in nam commodi non id doloribus optio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fuga accusamus adipisci non soluta. Magni laboriosam non, adipisci deserunt iste tenetur veniam quos beatae numquam maiores laborum? Eveniet, reiciendis velit?</p>
+              <p>innerHTML is used to get or change the HTML inside an element, including tags. innerText can access only the visible text inside a tag. textContent gets or sets all text, including hidden text, but does not access HTML.</p>
             </div>
             <div class="blogs bg-white p-6 mt-5 rounded-[5px] ">
               <h1 class="font-bold text-xl">Question-3: What is event delegation in the DOM?</h1>
               <div class="border-b-2  border-dashed border-[#3752FD] my-8 mx-[-24px]"></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quia assumenda labore vel inventore, sunt modi excepturi facilis soluta hic aperiam velit in nam commodi non id doloribus optio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fuga accusamus adipisci non soluta. Magni laboriosam non, adipisci deserunt iste tenetur veniam quos beatae numquam maiores laborum? Eveniet, reiciendis velit?</p>
+              <p>In Document Object Model event delegation is a technique where a single event listener is added to a parent element instead of multiple child elements. Since events bubble up from child to parent, we can check which child triggered the event. This reduces our struggle and makes the code simpler.</p>
             </div>
             <div class="blogs bg-white p-6 mt-5 rounded-[5px] ">
               <h1 class="font-bold text-xl">Question-4: What is event bubbling in the DOM?</h1>
               <div class="border-b-2  border-dashed border-[#3752FD] my-8 mx-[-24px]"></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quia assumenda labore vel inventore, sunt modi excepturi facilis soluta hic aperiam velit in nam commodi non id doloribus optio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fuga accusamus adipisci non soluta. Magni laboriosam non, adipisci deserunt iste tenetur veniam quos beatae numquam maiores laborum? Eveniet, reiciendis velit?</p>
+              <p>In Document Object Model event bubbling is a process where an event starts from the target element and moves upward to its parent element until it reaches the root or document. It is very helpful and necessery process for event delegation in DOM..</p>
             </div>
-            <div class="blogs bg-white p-6 mt-5 rounded-[5px] ">
+            <div class="blogs bg-white p-6 mt-5 rounded-[5px]">
               <h1 class="font-bold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
               <div class="border-b-2  border-dashed border-[#3752FD] my-8 mx-[-24px]"></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quia assumenda labore vel inventore, sunt modi excepturi facilis soluta hic aperiam velit in nam commodi non id doloribus optio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fuga accusamus adipisci non soluta. Magni laboriosam non, adipisci deserunt iste tenetur veniam quos beatae numquam maiores laborum? Eveniet, reiciendis velit?</p>
+              <p>Create : We can create element by using document.createElement(). Then comes adding it in dom.
+                Add : we can add a created element by using appendChild() function to its parent.
+                Remove : We can use removeChild() function or simply remove() function inside a loop to each element like for-of or anything else..</p>
             </div>
           </section>
     </header>
