@@ -18,8 +18,11 @@ function updation(id , id2){
         getID('total-tasks').innerText = getInnerValue('total-tasks')+1;
         getID('remaining-tasks').innerText = getInnerValue('remaining-tasks')-1;
 
+        let date = new Date();
+        let time = date.toLocaleTimeString('en-us', {hour12: true});
+
         let p = document.createElement('p');
-        p.innerText = 'You have Complete The Task ' + getInnerText(id2) +' at 12:48:15 PM';
+        p.innerText = 'You have Complete The Task ' + getInnerText(id2) +' at ' +time;
         p.classList.add('activities','bg-[#F4F7FF]', 'p-3', 'rounded-2xl', 'mt-1')
         getID('activity-container').appendChild(p);
 

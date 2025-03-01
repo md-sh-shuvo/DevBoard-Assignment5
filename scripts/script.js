@@ -12,4 +12,3 @@ getID('Go-to-blogs').addEventListener('click', function(){
     window.location.href = './blog.html';
 })
 
-
