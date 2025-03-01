@@ -28,6 +28,6 @@ function updation(id , id2){
 
 
         count++;
-        if(count === 6) alert('Congrats!!! You have completed all the tasks');
+        if(count === document.getElementsByClassName('box').length) alert('Congrats!!! You have completed all the tasks');
     })
 }
